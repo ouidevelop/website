@@ -1,0 +1,452 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea:focus, input:focus, button:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Pavanam', sans-serif;
+  font-size: 18px;
+  color: rgb(44, 67, 71);
+  background: url("images/background/picture/nathan-anderson-139511.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(44, 67, 71);
+}
+
+a:hover {
+  color: rgb(20, 164, 40);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+}
+
+.brand {
+  margin-top: 280px;
+  text-align: center;
+  font-size: 76px;
+  color: white;
+}
+
+.main {
+  position: relative;
+  margin-top: 500px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.side {
+  position: absolute;
+  width: 30%;
+}
+
+.side-transparent {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  background: url("images/background/section/section3.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+}
+
+.side-footer {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  bottom: 40px;
+  width: 30%;
+  text-align: right;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding-right: 40px;
+}
+
+.side-footer .link, .copyright {
+  display: inline-block;
+  width: 32px;
+}
+
+.pictures {
+  z-index: 10;
+  text-align: right;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 28px;
+  color: black;
+}
+
+.pictures img {
+  width: 60px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.pictures .left-picture {
+  margin-left: 0;
+}
+
+.side-brand h1 {
+  padding: 20px 0;
+  font-size: 22px;
+  border-bottom: 1px solid rgb(20, 164, 40);
+}
+
+.side-brand h2 {
+  margin-top: 20px;
+}
+
+.content {
+  width: 70%;
+  margin-left: 30%;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.section {
+  width: 80%;
+  margin: 40px auto;
+  border-bottom: 1px solid rgb(20, 164, 40);
+}
+
+.section .title {
+  display: inline-block;
+  padding: 40px 0;
+  font-size: 42px;
+  color: black;
+}
+
+.team-link {
+  display: inline-block;
+  font-size: 32px;
+  width: 28px;
+  margin: 0 20px;
+}
+
+.section-container {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+  margin: 40px 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 20px;
+}
+
+.blog {
+  display: block;
+  padding: 20px 0 0 2%;
+  font-size: 20px;
+}
+
+.blog i {
+  display: inline;
+}
+
+.blog:hover i {
+  color: black;
+}
+
+.portfolio-item {
+  background: rgb(253, 253, 253);
+  float: left;
+  width: 46%;
+  border: 1px solid rgba(20, 164, 40, 0.1);
+  border-radius: 2px;
+  margin: 20px 2%;
+  text-align: center;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 40px 2px;
+}
+
+.portfolio-item:hover {
+  color: black;
+  border: 1px solid rgba(20, 164, 40, 0.9);
+}
+
+.portfolio-item i {
+  display: block;
+}
+
+.portfolio-item span {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.project-overlay {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.project-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-content .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  font-size: 40px;
+}
+.project-content .close:hover {
+  color: rgb(20, 164, 40);
+}
+
+.project-content {
+  position: relative;
+  background: rgb(253, 253, 253);
+  height: 70vh;
+  width: 70%;
+  margin: 15vh 15%;
+  border-radius: 2px;
+}
+
+.project-content h1 {
+  padding: 40px 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+.project-content .project-description {
+  text-align: center;
+}
+
+.developer .picture {
+  float: right;
+  width: 120px;
+  margin: 0 0 10px 20px;
+}
+
+.developer {
+  clear: both;
+}
+
+.developer .picture img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 10px;
+}
+
+.developer .picture .link {
+  display: inline-block;
+  width: 40px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.developer .picture .github {
+  margin-left: 12px;
+}
+
+.developer .picture .linkedin {
+  float: right;
+  margin-right: 12px;
+}  
+
+.marine {
+  margin-bottom: 20px;
+}
+
+.description {
+  padding: 20px 0;
+}
+
+.contact {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.message {
+  margin-bottom: 0;
+}
+
+.contact .message form {
+  float: left;
+  text-align: center;
+}
+
+.contact .message form input, .contact .message form textarea {
+  background: rgba(255, 255, 255, 0.9);
+  float: left;
+  width: 46%;
+  margin: 20px 2%;
+  border: 1px solid black;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 10px;
+  font-size: 20px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: rgb(44, 67, 71);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: rgb(44, 67, 71);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: rgb(44, 67, 71);
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(44, 67, 71);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(44, 67, 71);
+}
+
+.contact .message form .message-input {
+  width: 96%;
+  height: 160px;
+  margin: 0 2%;
+}
+
+.contact .message button {
+  background: white;
+  width: 160px;
+  height: 40px;
+  margin: 20px 0 40px;
+  padding: 0;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.contact .message button:hover {
+  background: rgb(253, 253, 253);
+  color: rgb(20, 164, 40);
+}
+
+.contact .message button span {
+  display: block;
+  margin-top: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.info-contact {
+  text-align: center;
+}
+
+.info-contact .phone, .info-contact .email {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 10px;
+}
+
+.info-contact .phone i, .info-contact .email i {
+  width: 20px;
+}
+
+.info-contact .phone span, .info-contact .email span {
+  width: 180px;
+  display: inline-block;
+}
+
+.info-contact .phone span {
+  width: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+  .pictures img {
+    width: 40px;
+    margin-left: 2px;
+  }
+  .portfolio-item {
+    height: 180px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .brand {
+    font-size: 60px;
+  }
+  
+  .side, .side-transparent {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
