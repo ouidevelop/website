@@ -76,10 +76,33 @@ a:hover {
 .header {
   position: fixed;
   top: 0;
+  bottom: 0;
+}
+
+.transparent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.target-fade {
+  -webkit-animation: target-fade 5s 1;
+  -moz-animation: target-fade 5s 1;
+}
+
+@-webkit-keyframes target-fade {
+  0% { background-color: rgba(0, 0, 0, 1); }
+  100% { background-color: rgba(0, 0, 0, 0); }
+}
+
+@-moz-keyframes target-fade {
+  0% { background-color: rgba(0, 0, 0, 1); }
+  100% { background-color: rgba(0, 0, 0, 0); }
 }
 
 .brand {
-  margin-top: 280px;
+  position: fixed;
+  top: 280px;
   text-align: center;
   font-size: 76px;
   color: white;

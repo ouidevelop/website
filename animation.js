@@ -1,12 +1,12 @@
 $(window).scroll(function () {
   $('.brand').css('opacity', 1 - $(window).scrollTop() / 200);
-  if ($(window).width() > 500) {
+  if ($(window).width() > 480) {
     $('.side-transparent').css('display', 'block');
     $('.side-transparent').css('opacity', 0 + $(window).scrollTop() / 500);
   }
 });
 
-if ($(window).width() > 500) {
+if ($(window).width() > 480) {
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     if (scrollTop > 500) {
