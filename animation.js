@@ -2,7 +2,7 @@
 if ($(window).width() > 480) {
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    if (scrollTop > 499) {
+    if (scrollTop > 539) {
       $('.side-transparent .side-header').css({'display': 'none'});
       $('.side .side-header, .side-menu, .side-footer').css({'display': 'block'});
       $('.side .side-header, .side-menu, .side-footer').css({'position': 'fixed', 'color': 'white'});
@@ -52,6 +52,12 @@ $('.close a').on('click', function() {
 $('.portfolio-item a').on('click', function() {
   $('body').css({'overflow': 'hidden'});
 });
+
+// set height of computer background picture
+// var w = $(window).width();
+// var val = w/1.6;
+// console.log(w, val);
+// $('.header').css('height', val+'px');
 
 
 $(window).scroll(function () {

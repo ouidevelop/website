@@ -116,7 +116,15 @@ body {
   font-family: 'Pavanam', sans-serif;
   font-size: 18px;
   color: rgb(44, 67, 71);
-  background: url("images/backgrounds/pictures/nathan-anderson-139511.jpg") no-repeat top center fixed;
+  background: url("images/backgrounds/pictures/nathan-anderson-139511.jpg") no-repeat center right fixed;
+  /*background: url("images/backgrounds/pictures/benjamin-voros-160962.jpg") no-repeat center right fixed;*/
+  /*background: url("images/backgrounds/pictures/bg1.jpg") no-repeat center right fixed;*/
+  /*background: url("images/backgrounds/pictures/bg4.jpg") no-repeat center right fixed;*/
+  /* background: url("images/backgrounds/pictures/bg7.png") no-repeat center right fixed; */
+  /* background: url("images/backgrounds/pictures/bg8.png") no-repeat center right fixed; */
+  /* background: url("images/backgrounds/pictures/bg9.png") no-repeat center right fixed; */
+  /*background: url("images/backgrounds/pictures/bg10.png") no-repeat center right fixed;*/
+  /* background: url("images/backgrounds/pictures/background.png") no-repeat top right fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -128,9 +136,15 @@ body {
 /*HEADER*/
 
 .header {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  position: fixed; 
+  top: 0; 
+  bottom: 0; 
+  /*background: url("images/backgrounds/pictures/background.png") no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  height: 0;*/
 }
 .transparent {
   position: absolute;
@@ -152,10 +166,11 @@ body {
 }
 .org-name {
   position: fixed;
-  top: 280px;
+  top: 360px;
   text-align: center;
   font-size: 76px;
   color: white;
+  /* display: none; */
 }
 
 
@@ -163,7 +178,7 @@ body {
 
 .main {
   position: relative;
-  margin-top: 500px;
+  margin-top: 540px; 
   background: rgba(255, 255, 255, 0.9);
 }
 
@@ -220,6 +235,7 @@ body {
   bottom: 0;
   width: 30%;
   background: url("images/backgrounds/sections/section.png") no-repeat center center fixed;
+  /*background: url("images/backgrounds/pictures/bg8.png") no-repeat top right fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -452,6 +468,9 @@ textarea {
 /*RESPONSIVENESS*/
 
 @media only screen and (max-width: 768px) {
+  .org-name {
+    top: 280px;
+  }
   .section-container {
     padding: 20px;
   }
@@ -467,12 +486,20 @@ textarea {
   .org-name {
     font-size: 60px;
   }
+  .main {
+  }
   .side, .side-transparent {
     display: none;
   }
   .content {
     width: 100%;
     margin-left: 0;
+  }
+  .section {
+    margin: 20px auto 0;
+  }
+  .section .title {
+    padding: 20px 0;
   }
   .portfolio-link span {
     padding: 0;
