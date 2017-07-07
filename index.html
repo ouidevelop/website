@@ -15,153 +15,209 @@
 
   <div class="header">
     <div class="transparent target-fade"></div>
-    <h1 class="brand">Oui Develop</h1>
+    <h1 class="org-name">Oui Develop</h1>
   </div>
 
   <div class="main">
 
     <div class="side">
-      <div class="pictures">
-        <img alt="software engineer Marine Guillanton" class="left-picture" src="images/software-engineer/marine-guillanton.jpg">
-        <img alt="software engineer Michael Kurrels" src="images/software-engineer/michael-kurrels.jpg">
+
+      <div class="side-header">
+        <!-- <img alt="software engineer Marine Guillanton" class="left-picture" src="images/team-members/marine-guillanton.jpg">
+        <img alt="software engineer Michael Kurrels" src="images/team-members/michael-kurrels.jpg">
         <div class="side-brand">
           <h1>Oui Develop</h1>
           <h2>a sentence here would be nice</h2>
-        </div>
+        </div> -->
+        <img class="full-logo" alt="Oui Develop logo" src="images/logos/full-logo-reversed.png">
       </div>
+
+      <div class='side-menu'>
+        <ol class="menu-items">
+          <li class="menu-item">
+            <a class="link-to-section" href="#about">About</a>
+          </li>
+          <li class="menu-item">
+            <a class="link-to-section" href="#portfolio">Recent Work</a>
+          </li>
+          <li class="menu-item">
+            <a class="link-to-section" href="#team">Team</a>
+          </li>
+          <li class="menu-item">
+            <a class="link-to-section" href="#contact">Get In Touch</a>
+          </li>
+        </ol>
+      </div>
+
       <div class="side-footer">
-        <!-- <span class="copyright">
+        <span class="copyright">
           <i class="fa fa-copyright" aria-hidden="true"></i>
           <link rel="copyright" href="copyright.html">
-        </span> -->
+        </span>
         <a class="link github" href="https://github.com/ouidevelop" target="_blank"><i class="fa fa-lg fa-github" aria-hidden="true"></i></a>
-        <a class="link email"><i class="fa fa-lg fa-envelope" aria-hidden="true"></i></a>
+        <a class="link email" href="mailto:ouidevelop@gmail.com"><i class="fa fa-lg fa-envelope" aria-hidden="true"></i></a>
+      </div>
+
+    </div>
+
+    <div class="side-transparent">
+      <div class="side-header">
+        <img class="full-logo" alt="Oui Develop logo" src="images/logos/full-logo-reversed.png">
       </div>
     </div>
 
-    <div class="side-transparent"></div>
-
     <div class="content">
 
-      <div class="section about">
+      <div id="about" class="section">
         <h3 class="title">About</h3>
         <div class="section-container">
           <p class="section-content">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
         </div>
       </div>
 
-      <div id="portfolio" class="section portfolio">
+      <div id="portfolio" class="section">
         <h3 class="title">Recent Work</h3>
         <div class="section-container">
           <div class="section-content">
-            <a href="#software-solutions" class="portfolio-item">
-              <i class="fa fa-4x fa-puzzle-piece" aria-hidden="true"></i>
-              <span>Software Solutions</span>
-            </a>
-            <a href="#low-tech-apps" class="portfolio-item">
-              <i class="fa fa-4x fa-wrench" aria-hidden="true"></i>
-              <span>Low Tech Apps</span>
-            </a>
-            <a href="#websites" class="portfolio-item">
-              <i class="fa fa-4x fa-code" aria-hidden="true"></i>
-              <span>Websites</span>
-            </a>
-            <a href="#data-visualizations" class="portfolio-item">
-              <i class="fa fa-4x fa-area-chart" aria-hidden="true"></i>
-              <span>Data Visualizations</span>
+            <ol class="portfolio-items">
+              <li class="portfolio-item">
+                <a href="#software-solutions" class="portfolio-link">
+                  <i class="fa fa-4x fa-puzzle-piece" aria-hidden="true"></i>
+                  <span>Software Solutions</span>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a href="#low-tech-apps" class="portfolio-link">
+                  <i class="fa fa-4x fa-wrench" aria-hidden="true"></i>
+                  <span>Low Tech Apps</span>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a href="#websites" class="portfolio-link">
+                  <i class="fa fa-4x fa-code" aria-hidden="true"></i>
+                  <span>Websites</span>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a href="#data-visualizations" class="portfolio-link">
+                  <i class="fa fa-4x fa-area-chart" aria-hidden="true"></i>
+                  <span>Data Visualizations</span>
+                </a>
+              </li>
+            </ol>
+            <a class="blog">
+              <i class="fa fa-2x fa-pencil-square-o" aria-hidden="true"></i>
+              <span>Blog</span>
             </a>
           </div>
-          <a class="blog">
-            <i class="fa fa-2x fa-pencil-square-o" aria-hidden="true"></i>
-            <span>Blog</span>
-          </a>
         </div>
       </div>
 
       <div id="software-solutions" class="project-overlay">
         <div class="project-content">
-          <a class="close" href="#portfolio">&times;</a>
-          <h1>Software Solutions</h1>
-            <p class="project-description">some descrition here</p>
+          <div class="close">
+            <a href="#portfolio">&times;</a>
+          </div>
+          <h1 class="portfolio-item-name">Software Solutions</h1>
+          <div class="project-description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
         </div>
       </div>
       <div id="low-tech-apps" class="project-overlay">
         <div class="project-content">
-          <a class="close" href="#portfolio">&times;</a>
-          <h1>Low Tech Apps</h1>
-            <p class="project-description">some descrition here</p>
+          <div class="close">
+            <a href="#portfolio">&times;</a>
+          </div>
+          <h1 class="portfolio-item-name">Low Tech Apps</h1>
+          <div class="project-description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
         </div>
       </div>
       <div id="websites" class="project-overlay">
         <div class="project-content">
-          <a class="close" href="#portfolio">&times;</a>
-          <h1>Websites</h1>
-            <p class="project-description">some descrition here</p>
+          <div class="close">
+            <a href="#portfolio">&times;</a>
+          </div>
+          <h1 class="portfolio-item-name">Websites</h1>
+          <div class="project-description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
         </div>
       </div>
       <div id="data-visualizations" class="project-overlay">
         <div class="project-content">
-          <a class="close" href="#portfolio">&times;</a>
-          <h1>Data Visualizations</h1>
-            <p class="project-description">some descrition here</p>
+          <div class="close">
+            <a href="#portfolio">&times;</a>
+          </div>
+          <h1 class="portfolio-item-name">Data Visualizations</h1>
+          <div class="project-description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
         </div>
       </div>
 
-      <div class="section team">
+      <div id="team" class="section">
         <h3 class="title">Team<a class="team-link github" href="https://github.com/ouidevelop" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></h3>
         <div class="section-container">
-          <div class="section-content developer marine">
-            <div class="picture">
-              <img alt="software engineer Marine Guillanton" src="images/software-engineer/marine-guillanton.jpg">
-              <div class="link github">
-                <a href="https://github.com/marineAndrea" target="_blank">
-                  <i class="fa fa-lg fa-github" aria-hidden="true"></i>
-                </a>
+          <ol class="section-content">
+            <li class="developer marine">
+              <div class="picture">
+                <img alt="software engineer Marine Guillanton" src="images/team-members/marine-guillanton.jpg">
+                <div class="link github">
+                  <a href="https://github.com/marineAndrea" target="_blank">
+                    <i class="fa fa-lg fa-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div class="link linkedin">
+                  <a href="https://www.linkedin.com/in/marineguillanton/" target="_blank">
+                    <i class="fa fa-lg fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
               </div>
-              <div class="link linkedin">
-                <a href="https://www.linkedin.com/in/marineguillanton/" target="_blank">
-                  <i class="fa fa-lg fa-linkedin" aria-hidden="true"></i>
-                </a>
+              <div class="description">
+                <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
               </div>
-            </div>
-            <div class="description">
-              <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-            </div>
-          </div>
-          <div class="section-content developer mike">
-            <div class="picture">
-              <img alt="Software Engineer Michael Kurrels" src="images/software-engineer/michael-kurrels.jpg">
-              <div class="link github">
-                <a href="https://github.com/mKurrels" target="_blank">
-                  <i class="fa fa-lg fa-github" aria-hidden="true"></i>
-                </a>
+            </li>
+            <li class="developer mike">
+              <div class="picture">
+                <img alt="Software Engineer Michael Kurrels" src="images/team-members/michael-kurrels.jpg">
+                <div class="link github">
+                  <a href="https://github.com/mKurrels" target="_blank">
+                    <i class="fa fa-lg fa-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div class="link linkedin">
+                  <a href="https://www.linkedin.com/in/mkurrels/" target="_blank">
+                    <i class="fa fa-lg fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
               </div>
-              <div class="link linkedin">
-                <a href="https://www.linkedin.com/in/mkurrels/" target="_blank">
-                  <i class="fa fa-lg fa-linkedin" aria-hidden="true"></i>
-                </a>
+              <div class="description">
+                <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
               </div>
-            </div>
-            <div class="description">
-              <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
       </div>
 
-      <div class="section contact">
+      <div id="contact" class="section">
         <h3 class="title">Get In Touch</h3>
         <div class="section-container message">
           <form method="POST" action="http://formspree.io/ouidevelop@gmail.com" class="section-content">
             <input type="text" name="name" value="" placeholder="Name">
             <input type="text" name="email" value="" placeholder="Email">
-            <textarea class="message-input" type="text" name="message" value="" placeholder="Message"></textarea>
+            <textarea type="text" name="message" value="" placeholder="Message"></textarea>
             <button type="submit" value="Submit">
               <span>Send Message</span>
             </button>
           </form>
           <div class="section-content info-contact">
-            <a class="email">
+            <a class="email" href="mailto:ouidevelop@gmail.com">
               <i class="fa fa-lg fa-envelope" aria-hidden="true"></i>
               <span>ouidevelop@gmail.com</span>
             </a>
