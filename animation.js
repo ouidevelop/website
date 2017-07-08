@@ -78,7 +78,7 @@ $('.portfolio-item a').on('click', function() {
 
 $(window).scroll(function () {
   // fades out org name on scroll
-  $('.org-name').css('opacity', 1 - $(window).scrollTop() / 200);
+  // $('.org-name').css('opacity', 1 - $(window).scrollTop() / 200);
   // fades in transparent side-bar on scroll
   if ($(window).width() > 480) {
     $('.side-transparent').css('display', 'block');
