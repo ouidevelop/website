@@ -1,11 +1,32 @@
+// set height of computer background picture
+var w = $(window).width();
+var h = $(window).height();
+var val = w/1.6-2;
+if ($(window).width() > 480) {
+  if (val > h) {
+    $('.header').css('height', '100vh');
+    $('.main').css('margin-top', '100vh');
+  } else {
+    $('.header').css('height', val+'px');
+    $('.main').css('margin-top', val+'px');
+  }
+} else {
+  $('.header').css('height', 0.9*w+'px');
+  $('.main').css('margin-top', 0.9*w+'px');
+}
+
+
 // display side-bar items
 if ($(window).width() > 480) {
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    if (scrollTop > 539) {
+    var top = val;
+    if (val > h) {
+      top = h-2; 
+    }
+    if (scrollTop > top) {
       $('.side-transparent .side-header').css({'display': 'none'});
-      $('.side .side-header, .side-menu, .side-footer').css({'display': 'block'});
-      $('.side .side-header, .side-menu, .side-footer').css({'position': 'fixed', 'color': 'white'});
+      $('.side .side-header, .side-menu, .side-footer').css({'position': 'fixed', 'display': 'block'});
       $('.side .side-header').css({'top': '0'});
       $('.side-menu').css({'top': '200px'});
       $('.side-footer').css({'bottom': '0'});
@@ -35,6 +56,7 @@ $('.portfolio-link').on('click', function() {
 });
 // hides overlay on click outside from descrition container
 $('.project-overlay').on('click', function() {
+  $('body').css({'overflow': 'auto'});
   var id = $(this).attr('id');
   $('#'+id).removeClass('visible');
 });
@@ -53,19 +75,13 @@ $('.portfolio-item a').on('click', function() {
   $('body').css({'overflow': 'hidden'});
 });
 
-// set height of computer background picture
-// var w = $(window).width();
-// var val = w/1.6;
-// console.log(w, val);
-// $('.header').css('height', val+'px');
-
 
 $(window).scroll(function () {
   // fades out org name on scroll
-  $('.org-name').css('opacity', 1 - $(window).scrollTop() / 200);
+  // $('.org-name').css('opacity', 1 - $(window).scrollTop() / 200);
   // fades in transparent side-bar on scroll
   if ($(window).width() > 480) {
     $('.side-transparent').css('display', 'block');
-    $('.side-transparent').css('opacity', 0 + $(window).scrollTop() / 500);
+    $('.side-transparent').css('opacity', 0 + $(window).scrollTop() / h);
   }
 });
