@@ -136,7 +136,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url("images/backgrounds/pictures/background.png");
+  background-image: url("images/backgrounds/pictures/bg-big.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top right;
@@ -144,6 +144,16 @@ body {
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
+}
+.to-content {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  margin: 10px;
+}
+.to-content a {
+  color: var(--side-overlay);
 }
 .transparent {
   position: absolute;
@@ -480,6 +490,12 @@ textarea {
 
 
 /*RESPONSIVENESS*/
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    background-image: url("images/backgrounds/pictures/background.png");
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .full-logo {

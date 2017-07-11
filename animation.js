@@ -1,18 +1,20 @@
 // set height of computer background picture
 var w = $(window).width();
 var h = $(window).height();
-var val = w/1.6-2;
-if ($(window).width() > 480) {
-  if (val > h) {
-    $('.header').css('height', '100vh');
-    $('.main').css('margin-top', '100vh');
-  } else {
-    $('.header').css('height', val+'px');
-    $('.main').css('margin-top', val+'px');
-  }
+var val = w;
+if ($(window).width() > 1024) {
+  val = w/2;
+} else if ($(window).width() > 480) {
+  val = w/1.6;
+}
+$('.header').css('height', val+'px');
+if (val > h) {
+ $('.main').css('margin-top', h-1+'px');
+ $('.to-content').css('display', 'block');
+} else if (val > h-100) {
+  $('.main').css('margin-top', h-101+'px');
 } else {
-  $('.header').css('height', 0.9*w+'px');
-  $('.main').css('margin-top', 0.9*w+'px');
+  $('.main').css('margin-top', val-1+'px');
 }
 
 
@@ -20,7 +22,7 @@ if ($(window).width() > 480) {
 if ($(window).width() > 480) {
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    var top = val;
+    var top = val-2;
     if (val > h) {
       top = h-2; 
     }
@@ -28,8 +30,14 @@ if ($(window).width() > 480) {
       $('.side-transparent .side-header').css({'display': 'none'});
       $('.side .side-header, .side-menu, .side-footer').css({'position': 'fixed', 'display': 'block'});
       $('.side .side-header').css({'top': '0'});
-      $('.side-menu').css({'top': '200px'});
       $('.side-footer').css({'bottom': '0'});
+      if (h >= 500) {
+        $('.side-menu').css({'top': '200px'});
+      } else { // adjusts for rotated phone
+        $('.side-menu').css({'top': '80px'});
+        $('.menu-item').css({'padding': '5px 0', 'font-size': '80%'});
+        $('.side-footer').css({'padding': '10px 3%'});
+      }
     } else {
       $('.side-transparent .side-header').css({'display': 'block'});
       $('.side .side-header, .side-menu, .side-footer').css({'display': 'none'});
