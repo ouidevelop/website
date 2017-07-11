@@ -9,24 +9,19 @@ if ($(window).width() > 1024) {
 }
 $('.header').css('height', val+'px');
 if (val > h) {
- $('.main').css('margin-top', h-1+'px');
+  val = h;
  $('.to-content').css('display', 'block');
 } else if (val > h-100) {
-  $('.main').css('margin-top', h-101+'px');
-} else {
-  $('.main').css('margin-top', val-1+'px');
+  val = h-100;
 }
+$('.main').css('margin-top', val-1+'px');
 
 
 // display side-bar items
 if ($(window).width() > 480) {
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
-    var top = val-2;
-    if (val > h) {
-      top = h-2; 
-    }
-    if (scrollTop > top) {
+    if (scrollTop > val-2) {
       $('.side-transparent .side-header').css({'display': 'none'});
       $('.side .side-header, .side-menu, .side-footer').css({'position': 'fixed', 'display': 'block'});
       $('.side .side-header').css({'top': '0'});
