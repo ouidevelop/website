@@ -205,22 +205,31 @@ body {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
-  padding: 40px 3%;
+  padding: 6vh 3%;
   color: var(--body-color);
 }
 .side-header, .side-menu, .side-footer {
   display: none;
 }
+.side-header {
+  top: 0;
+}
 .full-logo {
   width: 200px;
 }
+.side-menu {
+  top: 30vh;
+}
 .menu-item {
-  padding: 20px 0;
+  padding: 3vh 0;
   font-size: 140%;
   font-weight: bold;
 }
 .link-to-section:hover, .link-to-section:active, .link-to-section:focus, .link-to-section.selected {
   color: var(--hover-color);
+}
+.side-footer {
+  bottom: 0;
 }
 .side-footer a, .side-footer .copyright {
   display: inline-block;

@@ -24,14 +24,9 @@ if ($(window).width() > 480) {
     if (scrollTop > val-2) {
       $('.side-transparent .side-header').css({'display': 'none'});
       $('.side .side-header, .side-menu, .side-footer').css({'position': 'fixed', 'display': 'block'});
-      $('.side .side-header').css({'top': '0'});
-      $('.side-footer').css({'bottom': '0'});
       if (h >= 500) {
-        $('.side-menu').css({'top': '200px'});
       } else { // adjusts for rotated phone
-        $('.side-menu').css({'top': '80px'});
-        $('.menu-item').css({'padding': '5px 0', 'font-size': '80%'});
-        $('.side-footer').css({'padding': '10px 3%'});
+        $('.menu-item').css({'font-size': '80%'});
       }
     } else {
       $('.side-transparent .side-header').css({'display': 'block'});
