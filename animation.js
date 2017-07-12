@@ -73,15 +73,6 @@ $('.portfolio-item a').on('click', function() {
   $('body').css({'overflow': 'hidden'});
 });
 
-//fills phone field with javascript to avoid scrapers
-function getPhoneNumber() {
-  var first = "805";
-  var third = "4224";
-  var second = "-423-";
-  return first+second+third;
-}
-$('.phone span').text(getPhoneNumber());
-
 
 $(window).scroll(function () {
   // fades out org name on scroll
@@ -92,3 +83,13 @@ $(window).scroll(function () {
     $('.side-transparent').css('opacity', 0 + $(window).scrollTop() / h);
   }
 });
+
+
+//fills phone field with javascript to avoid scrapers
+$('.phone span').text(getPhoneNumber());
+function getPhoneNumber() {
+  var first = "805";
+  var third = "4224";
+  var second = "-423-";
+  return first+second+third;
+}
